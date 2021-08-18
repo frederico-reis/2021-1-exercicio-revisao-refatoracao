@@ -9,15 +9,19 @@ using namespace std;
 
 class Imovel {
     public:
-        double AREA;
-        int Q;
-        int B;
-        int V;
-        double VALORm2;
+        double area;
+        int quartos;
+        int banheiros;
+        int vagas;
+        double valorM2;
         double Valor;
-        double C;
+        double Comissao;
         Cliente vendedor;
         string corretor;
+
+        double valor() {
+            return area * valorM2;
+        }
 
         void print() {
             cout << "[Vendedor]" << endl;
